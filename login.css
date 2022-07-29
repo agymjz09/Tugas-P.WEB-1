@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(53, 88, 88);
+}
+#A {
+    width: 500px;
+    height: 50%;
+    overflow: hidden;
+    margin: 50px auto;
+    padding: 10px;
+}
+.conten {
+    width: 250px;
+    height: 40%;
+    margin: 10px auto;
+    background-color: blanchedalmond;
+    padding: 40px 50px;
+}
+.q {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(53, 88, 88);
+}
+.username,
+.password {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px 12px;
+    border: 1px solid rgb(53, 88, 88);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.forget {
+    position: relative;
+}
+.forget a{
+    position: absolute;
+    text-decoration: none;
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+}
+.Login {
+    width: 100%;
+    margin-top: 20px;
+    padding: 8px;
+    background-color: rgb(53, 88, 88);
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.conten2 {
+    width: 250px;
+    height: 40%;
+    margin: 10px auto;
+    background-color: blanchedalmond;
+    padding: 20px 50px;
+}
+.signup {
+    text-align: center;
+}
+.signup a {
+    text-decoration: none;
+    cursor: pointer;
+}
+input:focus {
+    background-color: rgb(206, 203, 203);
+    outline: none;
+}

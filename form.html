@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sepeda</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="B">
+        <div class="sidebar">
+            <div class="nama">
+                <img src="user.jpeg" alt="image" height="55" width="55">
+                <h4>Agym Mahaputra R. B <br>F55121076</h4>
+            </div>           
+            <ul>
+                <li><i class="fas fa-home"></i><a href="main.html" class="title">Home</a></li>
+                <li><i class="fas fa-table-cells"></i><a href="table.html" class="title">Data Penjualan Sepeda</a></li>
+                <li><i class="fas fa-mail-bulk"></i><a href="form.html" class="title">Pendataan Sepeda</a></li>
+                <li><i class="fas fa-long-arrow-left"></i><input type="button" value="LogOut" class="logout" id="logout"></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="top-bar">
+                <div class="konten">
+                    <div class="isi">
+                        <h1>PENDATAAN SEPEDA</h1>
+                    </div>
+                    <div class="pengisian">
+                        <form action="" method="post">
+                            <div class="table1">
+                            <form>
+                            <table>
+                                <tr>
+                                    <td>Nama Sepeda</td>
+                                    <td> : </td>
+                                    <td><input type="text" placeholder="Series" class="inp" id="A" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>Jenis Sepeda</td>
+                                    <td> : </td>
+                                    <td><input type="text" placeholder="Jenis" class="inp" id="B" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>Pabrikan</td>
+                                    <td> : </td>
+                                    <td><input type="text" placeholder="Pembuat sepeda" class="inp" id="C" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>stok</td>
+                                    <td> : </td>
+                                    <td><input type="text" placeholder="Jumlah Sepeda" class="inp" id="D" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>terjual</td>
+                                    <td> : </td>
+                                    <td><input type="text" placeholder="Jumlah Sepeda" class="inp" id="E" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>Tahun Produksi</td>
+                                    <td> : </td>
+                                    <td><input type="date" class="inp" id="F" required/></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                    <input type="button" value="Submit" id="submit" class="inp">
+                                    </td>
+                                </tr>
+                            </table>
+                            </form>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="form.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>

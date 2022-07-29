@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Sepeda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+ 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <div class="B">
+        <div class="sidebar">
+            <div class="nama">
+                <img src="user.jpeg" alt="image" height="55" width="55">
+                <h4>Agym Mahaputra R. B <br>F55121076</h4>
+            </div>           
+            <ul>
+                <li><i class="fas fa-home"></i><a href="main.html" class="title">Home</a></li>
+                <li><i class="fas fa-table-cells"></i><a href="table.html" class="title">Data Penjualan Sepeda</a></li>
+                <li><i class="fas fa-mail-bulk"></i><a href="form.html" class="title">Pendataan Sepeda</a></li>
+                <li><i class="fas fa-long-arrow-left"></i><input type="button" value="LogOut" class="logout" id="logout"></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="top-bar">
+                <div class="konten">
+                    <div class="isi">
+                        <h1>DATA PENJUALAN SEPEDA</h1>
+                    </div>
+                </div>
+                <div class="t">
+                    <table id="tabelSaya" class="display">
+                        <thead>
+                            <tr>
+                                <th>Nama Sepeda</th>
+                                <th>Jenis Sepeda</th>
+                                <th>Pabrikan</th>
+                                <th>Stok</th>
+                                <th>terjual</th>
+                                <th>Tahun Produksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Thrill Oust 1.0</td>
+                                <td>MTB XC</td>
+                                <td>Thrill</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>2020</td>
+                            </tr>
+                            <tr>
+                                <td>Polygon Strada 8</td>
+                                <td>MTB XC</td>
+                                <td>Polygon</td>
+                                <td>20</td>
+                                <td>15</td>
+                                <td>2020</td>
+                            </tr>
+                            <tr>
+                                <td>Thrill Oust 1.0</td>
+                                <td>MTB XC</td>
+                                <td>Thrill</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>2021</td>
+                            </tr>
+                            <tr>
+                                <td>Pasific Premium 7.0</td>
+                                <td>RoadBike</td>
+                                <td>Pacific</td>
+                                <td>11</td>
+                                <td>3</td>
+                                <td>2021</td>
+                            </tr>
+                            <tr>
+                                <td>United Mirone</td>
+                                <td>Sepeda Lipat</td>
+                                <td>United</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>2022</td>
+                            </tr>
+                            <tr>
+                                <td>Thrill Ravage 3.0</td>
+                                <td>MTB XC</td>
+                                <td>Thrill</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>2020</td>
+                            </tr>
+                            <tr>
+                                <td>United Trifold</td>
+                                <td>Sepeda Lipat</td>
+                                <td>United</td>
+                                <td>3</td>
+                                <td>0</td>
+                                <td>2022</td>
+                            </tr>
+                            <tr>
+                                <td>Thrill Enthral</td>
+                                <td>RoadBike</td>
+                                <td>Thrill</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>2022</td>
+                            </tr>
+                            <tr>
+                                <td>Cervelo S5 Sram</td>
+                                <td>RoadBike</td>
+                                <td>Cervelo</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>2021</td>
+                            </tr>
+                            <tr>
+                                <td>Polygon Heist 1.0</td>
+                                <td>Sepeda Hybrid</td>
+                                <td>Polygon</td>
+                                <td>30</td>
+                                <td>15</td>
+                                <td>2019</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./logout.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#tabelSaya").DataTable();
+        });
+    </script>
+</body>
+</html>
